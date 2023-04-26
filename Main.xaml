@@ -1,0 +1,198 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="542,2304" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="552,2414.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="folderPath">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">C:\Users\user1\Downloads\attendance</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="s:String[]" Name="files" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Barcode Reader. Free Online Web Application" sap:VirtualizedContainerService.HintSize="510,2322.66666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6ca2271f-b2a1-4748-afaf-958fc421cfda" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,2104.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[files]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(folderPath)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,1908" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[files]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="file" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,1780.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="rollno" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" DisplayName="Double-click '2. Select Image File'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://online-barcode-reader.inliteresearch.com/" DesignTimeRectangle="374, 552, 348, 32" ElementType="InputBox" FriendlyName="'INPUT MainContent_FileU…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='file' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='file' aaname='Select image file with barcodes' /&gt;" Guid="6fee1d78-24e2-4b65-b0a6-5f8accd9106b" ImageBase64="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" InformativeScreenshot="c043cea996066a663cdba964f712af4a.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Barcode Reader. Free Online Web Application' /&gt;" SearchSteps="FuzzySelector, Image">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="374, 502, 256, 31" ElementType="Text" FriendlyName="'2. Select Image File'" FullSelectorArgument="&lt;webctrl aaname='2. Select Image File' parentid='content_main' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='2. Select Image File' parentid='content_main' tag='SPAN' type='' check:text='2. Select Image File' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" Text="[file]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="287, 615, 307, 25" ElementType="InputBox" FriendlyName="'editable text File name'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;ctrl name='File name:' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;ctrl name='File name:' role='editable text' automationid='' /&gt;" Guid="44dad5c3-f80d-4815-8126-ecc7574f69f9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATcAAAAdCAYAAADPYivWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAB3SURBVHhe7dRBEQAwEAOh8286/VXEDojgBhAkNyDp53bnOaBDbkCS3IAkuQFJcgOS5AYkyQ1IkhuQJDcgSW5AktyAJLkBSXIDkuQGJMkNSJIbkCQ3IEluQJLcgCS5AUlyA5LkBiTJDUiSG5AkNyDJaECS3ICg7QE2sxyUFKbuhQAAAABJRU5ErkJggg==" InformativeScreenshot="4378ef4236f1977d214fa1a65d6385db.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="196, 614, 79, 25" ElementType="Text" FriendlyName="'File name'" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;&lt;ctrl name='File name:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;&lt;ctrl name='File name:' role='text' automationid='' check:text='File name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAdCAYAAADW4FAcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGHSURBVGhD7ZbBgYQgDEWpinrohmLohVrsgAXFJcSIOPzZy+bwDsYYkseIY7ZtSwoGlQlEZQJRmUBUJhCVCURlAlGZQJZlBmeSsT5F4d5/o5cZXDImyxFwoeTE5G2+JvJUZkOQaZOPJNahMke8lHlFZTZUJpDXMrk8UWb0ydIzd0L2bx32rPWR5dajhuQYF7qc6G2OuxS2kJyUx/tjz4s53QzX466Al1mbaBLqwlLDhL0Ob3rv5/z4tVgv+BBGY4fMUq8IrXlnX/YUzeK05uMM0zLrUJSBvP76RtzsJl1yXmwE6emQeV1PXgM3A/aXWXe0+yWN4gRedxyvA99seHvN6TOT8YUZviKzG5KAkLlf51r0teQ5CJm895M/lzla8A5eV4zf1P+GzE9mAH+A5s44ic9l1jVRMhdmAMvM7DX4wPmLK4iiTMk8/+qQQff7JUaeXZOZeZzhuoEFvMxCbYby9NrMycywM62cnTxnWWZhOMOMTGUJlQlEZQJRmUBUJhCVCURlwtjSD2faO1tyFVASAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="641, 652, 132, 39" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='unchecked' /&gt;" Guid="b0fb4a54-e3fa-470a-b10d-ce6215a38f02" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIgAAAArCAYAAACjMsASAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJrSURBVHhe7Zw7bttAEIZ5A52HgG+gc7CKuzSppJzA7NzZt2DjADYSHSCBEbhg4MKdBVmAGjcxhDFnSYr7nNBKQ+3+xVfsk8V8mB0S4Ga73Y4ACAFBgAgEASKOIPdPWzq7/EOzrw+UffkNEmF+9ahib/tgCMITWIzltzVtX99ov9+DBOBYX6w2NFs+OJIYgsyvH6lcvXg3AfGzuHlWp4fuhCEIpxpkjnTZvv5VWcRwwmg0gvgWgnRgBwwnjAYESR4IAkQgCBCBIEAEggARCAJEIAgQgSBAJFpBqiKjLLMoKu9cECY+QeqSciVEQZUxVlOZc39OZa33A4nIBKmo+EemaDOLLQ8IEZUgdZmPCH4rUV7WnjFgE5Eg3REyos5QWSQvqe7ag1j9MTRQVO764Rjr0PZiDvtb805RyogEGZ8Z7EzTtjmIZn3S9xuSdEEfnuOKeSiQdXGqwt3rBIhHkC5wYwIQEsS31sw2gSylgj/I1QpiF8PjM9yUiE6Q4zOIv3YxxkISWv32EdYT6p8y8Qgy4g2mxw7URwVpjyMXCDJxVAACgR5wa5X/ziAWEGSyHPcdpJXA9wHNrhvG1REQZMr0x4ATiC64HhFaQXjMFMcnk/9tpBFTex4EOQHa4JqECtjDMeLUGJYcPZ0kOrowECQypBokdSBIAwQJA0EaIEgYCNIAQcJAECACQYAIBAEioiB8Nwj+7k8X/rtfFITvhljcrL2LQfxc/Niom4Z0JwxB7p9eVBbh22aQSdKBY82Xx3Ds2QHdCUMQhifML39Rdn5H2adbkACzz9/prPzpyME4ggCgA0GACAQBAjt6B//ZCgy0/oLPAAAAAElFTkSuQmCC" InformativeScreenshot="a316eecc0755e3c0d1685ef3a05b097a.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Read'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://online-barcode-reader.inliteresearch.com/" DesignTimeRectangle="408, 683, 54, 29" ElementType="Button" FriendlyName="'Read'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='button' aaname='Start Barcode Recognition' check:text='Read' /&gt;" Guid="606a3386-c229-42b4-bb27-ba88025b5b72" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAhCAYAAACIqrhwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAOLSURBVFhH7Zi/a9tQEMf1X2g0ZDBkqKd4jKYauhg8GDIYUzCmkzEUkwxBBIooNBGFYDoUZAg4Q8GBgjvUoNBQZygkEJADGQwZNGQQeHD/g2/v9MN6khXTkjrBjofvoPfunu7z7u492dLot43noBXosikC+uPnd+wffMDOzs5CixmYRWSbgPKErh/g+voa4/F4ocUMzCLCTkB5F5YBMhCzMNMUKKc8yWGRxUwr0GXSX4EOW3lIknS/1rLIV3R0h9HFn0Q3BvIUU741jIz/E6iy3Ub3WzemNpr1PFIMLBdhDEK/J9H/AI07i7JPapDJRn7bhZMw/2iaN+h4bKJBNpKsop84/0h6DFCVQSUVZmzO/tWGWsp65S3JSL+qQu/ZERtXoyG6+1XkN9NudfA75XUF5d02Lu5itiTnsh2uu5ZDrXUBZ+6gV03k+IWlNmxh3Doqu4HIm2Xox9TTJwbUQsoFLrYsYY0+9E2ZxrMovzPQ4f4nW+214rVEpRNZ1zlTkeX3bQTrNlEj/1y9Ni9QB/a5geoGZyAL9cwJ5247qMo0XjBgxXzM7QzZ59C88sdONSjrMsrH8Uw76LzhtYtoT051C82XNPaiATOSaQtGgW0fCDpLnLHmWTRIz0+GehqOTUQVoJCfcihmNVneOnkYN/7YDF/na82N50GgketlUoJUap+pNwT7QOYub4KCxpHvI+pEc0tMqsdO6RFVyKBPNh0Y+xpqJQVprgoB1P5SdeNp9AS/QPPpURudOpegDGXPjMEOJ2U0U1TWQ9fewUWrBsWF8uV+iGjQ6go9h6BBPImVMrfD6I5OW7c/M7TDQn+SzG0er6JjC/b3iLPkHjpbOsyBDWcUzlmHUdAnyKgnp9dAhubjh4MX4IwepYzlPvbpmSqjwptCMFNfVg66dX8u1qOZ9+wr2pJOVXfD5gLqBcNXg4TsXj8sYX93pUITlpAhLut2he0z0M75OYBRoF+KdrSJ55p3bdHc5IQO2mLqk5NO3S0vjjmBkoKrhA4nL3hPVqvoleTUPUqbshv2tUOZcKsiuBcn39AplEsJPTkwUOT3reWhtjrhurI8z4x6Gh55UNJLyqAwHv0ykpAiGPV4+qS2exrKG94mSHIaueAXkV+quU+x6+TWhF7J+eumkC1pMM8e0KPLoBVokvEiawWaZLzISgR9Nv/rPpt/6gNY3gVO+SKLGURIVgR0eWXjD8taI0EQ5kVIAAAAAElFTkSuQmCC" InformativeScreenshot="d18bc6c223f0dc587ac966171e025c40.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Barcode Reader. Free Online Web Application' /&gt;" SearchSteps="FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text '201401047'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://online-barcode-reader.inliteresearch.com/" DesignTimeRectangle="374, 685, 777, 58" FriendlyName="'201401047'" FullSelectorArgument="&lt;webctrl tag='PRE' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='PRE' type='' /&gt;" Guid="ddab7c07-a350-4382-9aa9-2b6f96c8d9b9" InformativeScreenshot="442b4144058937405cfa88f569e4fa82.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Barcode Reader. Free Online Web Application' /&gt;" SearchSteps="FuzzySelector" />
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[rollno]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[rollno]" />
+                    <ui:AppendLine DisplayName="Append Line" FileName="C:\Users\user1\Downloads\present_list.txt" sap:VirtualizedContainerService.HintSize="334,135.333333333333" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[rollno]" UseDefaultEncoding="False" />
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Reload'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="119, 68, 42, 42" ElementType="Button" FriendlyName="'Reload'" FullSelectorArgument="&lt;ctrl name='Barcode Reader. Free Online Web Application - Google Chrome - 53*' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Barcode Reader. Free Online Web Application - Google Chrome - 53*' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' automationid='' check:text='Reload' /&gt;" Guid="1b148c4c-5c1b-4eea-9eec-e2388a77c74e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGuSURBVGhD7ZdBTgIxFEA9iiZuJboncQ3RNUTXoHvQPegedI8XYDwAXgAvwAk4ASeoec180sRhrG35xNiX/GSm09I3n/JbjswfJYtrk8W1yeLaZHFtsrg2WVybpOKbzcYUxbsZj59Nt3trg2vaeFYF7YvFR3nnTxLx9XpthsNHc3xyWhv0cV+A63b72kwmL2WLP9Hiq9XKNBoXW7mzxrnp9e6sDME1bfKcvowRadrUxRFwhefzonzyndnsbfsCyIu0ujjLQzLdal3Z+58gy/QV4YOIDwYPdlKy6CMN7vI4iDgCMmnd8nDZJU2oiSPLhGTbhzppQk18NHqyE1IxfKBOI7crlsvPsqc/QeKdzk1wplLxv8R/u1T2QdSPkzoeCt+Wb0WqIkg8pBy6sIvK+FCCxEE2ILLuuwGBu+PyGaEEiyMgZw9qtI88Z5tm89KOYSzfXCjB4uAessgi5+4qEJxOX7eZRpqxMUSJAwKSeXmBfv/eisofChFOJQ3R4kBGZc3XBX1ilodLEnEBKaoMdZ5NikCWKpJKWEgqrkkW1yaLa5PFtcni2mRxbbK4LsZ8AW1nj18p5pXJAAAAAElFTkSuQmCC" InformativeScreenshot="d46863d4ad2d0cb06866ec9792ee5539.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Barcode Reader. Free Online Web Application - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="1025, 294, 123, 49" ElementType="Button" FriendlyName="'Continue'" FullSelectorArgument="&lt;ctrl name='Confirm Form Resubmission' role='dialog' /&gt;&lt;ctrl name='Continue' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Confirm Form Resubmission' role='dialog' /&gt;&lt;ctrl name='Continue' role='push button' automationid='' check:fulltext='Continue' /&gt;" Guid="9e8279ef-e871-46c8-8931-b972833d15dc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH8AAAA1CAYAAABofjQZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAU3SURBVHhe7Z3fayNFHMD9O/w7NOCLqJz+A/cihfPJh+rLIQoiSF9MPU7twVkIWBSsEXpVxNwhHt6PSh4asJ69atLrQyrUWMVNmyabS3aTzY+vMzu7OzObyV3Dpe3uzvcLn4fOTHeS+czszG53p08BhrahlL/yiwWzXzXghY8O4em3/0NiDHX4RrYBq7/anl0ekvx6ewAXPj9SHgSJP9QtdexHIL9uDeHZdFX5S0hySKUPoGkPXeeB/Ne/rEuFlvJt+POg7+VixDV2q33I/NyW3L75dcPNc+Vf37KlzNI/PTfz9nYHPr3bgoWfkDhC3VGHNH7/uyc5vlnsMPnnM3yev3Kr5RZ+8WNc7CUF6pLG5ZsPg7RXPzti8p/5gM/1D/7twfX78pkAiT/U6R/C6H/uwwMmXyxE4+rtlpSGxB/qlIaYppRP5wsxDYk/1CkNMQ3lawLK1xiUrzEoX2NQvsagfI1B+RqD8jUG5WsMyn8cCyYsF0w4p8qLOdGSn67DYtEBw2IPFrAYgm31IJdTlD9x6rBmsk/R2DUV+fEmMvJT2TaULLcqL4h0h3eC8ob696bFxUIXyuYAjN2mkF6DVYN+hiGpvyakJ4NoyM9YUHbcagDcUV6DVJB/CO9u9mC9IJQ/AVYNVn1Dkp9sIiF/fs8b4VYX5tLqMicNymecsvwWlNwahnDvB1W+gjRZhO31oeGfLUjYVh/W83XhjMGFljcOYX6HlGc/kk7Wh7Wc97BKrsvTxTCs0DH84zZh3Z2eBrCeq8Py/gD8B6Bty4HlJV7/3K73VKx3rHB6uKPN5DtQFtY7qu80Tc5evt/4ThcWVflh0n7j0xhAxeiRuZo3mFFsBGWD0WyRxnb6UCZlDb/DOA4s0bNM1oJ7YjppcFquXGRixssfkuOSet3yQscyO3DRq38S+TMbPdaJvM/JjzmEUv5knqCOjnx6ylflhxg3RQSNB2T0eem+OKlsmiwsveRSnv9+0FFCo3G8fBI1G2b8sisdYEXJWSXL0o4tn655aELoO6UKXo8k9Zz30qZJzOSbQcOL4hhcip/ni6sUxZV6Fch60g3xCmJy+WSausvLydMBSzu2fNJxHxnHHBiTcvbyMzZU3BrIiFlR5EuMNrBIWNSouPHpk8sPf4YpyDe7kNu0Ryk0EzryybW0PxJt0kjBaVSJ38CPGvl8REZV/qI3dY3K5+uF0yAC8sncJqy4bTK/zWWEBU66BnPCdf5j53x/IUfSzlp+atN7u4kuZv3PusTvaQR1Zf31Ar2ZJL4XWYXZQgdy3/o/T5dIyHe/JBEsvTPqjLnDJ94QIg0tr/blxptEfjBKyTEMuvrfY6P1SeTzKY2Eu4qnK3jvKoEE72hVoX4yAEy62u9BRVnP9IiIfMa5lTasGfy62Q1nAMa+DfPC9TP9Y0tuX7i8ItEwHTJC5DeKJpFPLyHXaryz2fvsXbYnkk+YyXehInbWnebonO/C7mSK9y7ody/vtGBWOMNNk0jJR04XlK8xKF9jUL7GoHyNQfkag/I1BuVrDMrXGJSvMShfY44tH/fkSR5j9+R5eYH/kQR340omN7bk3bheuXLI5L91jb+h4u/D9/xl3IcvKbz0CduH79KPfB++d74xmfzf/nKkwttk9NO4td2Bq3fUuzsi0YfuwHnnAduB835FdrxV6TH5NN77Tn4/je7Xinvvxj9Ue+++/33TzQvkP+wMpZ04kWRCHbeIaxqBfBq4336yee2LI/ZSixeSfD/wP20kB7rpMv1PG9c23OfOpFDKx9AhAP4Hx3q5+bBII+8AAAAASUVORK5CYII=" InformativeScreenshot="57f61bac172c07990c2f5ddcf5917dde.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Barcode Reader. Free Online Web Application - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAABD/SURBVGhDvZp5dFRVnsdrr0qlKqlUlsqeqspWSVVlqUpIQvaFJISQBNSIKBC1XThgoyLTdisEtWlXDCCKQhAQlx4VsWnPjDOKsVvoaVf0D8dut2CL0B5HAmi3aOL7zu9333uVCoJLTzv3nO/5Lfe9ep/ffffe9x5B889odoPeMS/VOXBTQdbQtmDu7leml4y+W1829nFLBT5uqcS7DeVjL9cERneHCkduys8a6kh29GVaTG6NRufWaU3LdBrLiMGcdMCWEUJschGSkj0HbPbUEY1Gv0yj0dJxP0Jj6MuyXMt2lxWMqKCyjfKb1VjWX5vDQi/VlGF+Zo5ktGbAbMuEwZIKU3weTIl+6Oz5cGaUItZVAo0xEaaYNOhNjm1crHLp/1tj8BXu9MF36kuPftwclgRYU2iqZXAS2+gca1uwUEpOLoTZVQ6bpxGGjBoYEihODcOSXo2k0Dw4ys+DJr4QJncLzAXd0NnyYLBnj2n11j4F4x9rK9xpBK5ODQbiEZ2EE7nGkKSO9BHyjzSWi/hIUxjr/cUwmJNhsmXAUtQHR9WlqOlZQsVUIja3E9XzV8JadjGsTatgLr8ExsAF0Hj7kdi9GpmL7oWxcgm08Z4BBef7N56veyv8B3g0hRjwFBsBZUuwR5pCiviYMIaCJdDGumGM80AXmwNtSjUM7pko6roKMTktyJu9AnZfD6xF86BvvBH68FLovGehcfkwClf+Dtr5uxDfP4zY6iXQmOK//53odyUteruudGxyJEMCaBI0GlZRYwiHWQ3l0uGGMuml+ioklS+Ate4axNQsFSNprlkOs7cbSWXnwOLpgDmrAabkStj8ZyOh+3aY8ntg9PbAfcnDMLSsgTZ8FQzhxdAXnQut3TOm0Vu+e01ck5M6qMKqYOroMpxsy2RLfdwv4Cl3uLFcsSH0n3czdBc9jazLn0LamjeRtfgR6CuWIzazFobkGsSmT4c1qQSmpDCsBV2IcbfBFLgIOt9F0LgXQpfdDl1eH7RpdTAU9cOS00xTKXe7gnn6tjw7dTB6dFUYeWQVv4EgyX5UrwCzTzmW6CP9sakepgv3wDRjHbR9O2G96c/IufppBNoXw57TAGt6Hey0kK12N0yxXsTmzIDF6Udy23WwDexB6dKtsOY0wZDdTMWGEZNVB1uwH3paN2fcmfpdiYsOC6io6aDEMqgCqFgZuowLkf26Ukm1N5RPh8buh7tzOWrW7IW+ZRVc9UtQ0X0Z4grbkDPjEqSG5sCSUYe4vJlIrr2Ujl2BGN/ZyJi3AeXzb4ApsxEmRwAGEy1+ey5iMyoQk1ICndF+pYI82XjBvlUTPCoACZohGDR6VGVoghWgsj2k+qKIMhwiy6pNypS0zgB0qdVwZFVBby+AjbZGc1IpzA4vAQ7CTlPJEu+D3T0DqbQmkmquQFzpItgy6mmqhKGzuhFfsgD67G5khfvhq6V1YM2lO2B+XsGebC9WFY9OGUUGYl8BirbCry2RVNiI6lilwuYGae7acmHQxcFgTII5Ph8x9MAyJ/ho+6xA8vRLYKXRt2bSdEosg7PiJ2i9ZgcK+2+FjQoyZ8+k50QpPeRKEBP+CYy+fmhjPLDlz4K/ru+Agi23q7Ncg5FRZEWBTwVkuChxEafkPlSsPrkcOl08LIZ4WB25iEkKIiY2k560IZiLz0Vw7lVw5jVDn1iD1JKz4GlaDKt3Fm23QZjT22BMqYEpoRg2ukv6OB90tP2WnH8jHIFu5Phb6S4ozZRkdd9+VdPkaBLUhyRRQARo0uc+YVVND0qHOmtxfOsmnHztZYwf/gjcLM58se/rDEkwxeUhJqEAFno9MKfWIGPhvUgNdNFrhB/G+CASvDSFcpuh0adDH+uh1wx6Gnvn0pyvQ0ZhK929AvodF83/MhjSG2BIqZgswH15aHvD9j681lUZGb2pgApwbYki1S/FkbM7BfTpWn5BmBZfMsq7F8NTfS70zhCsVIS965dIar+ets8w9JYsmAxO2LPo1cJZSaPvpyd2BgyGFORMvwBe2gBcJXNhSwnCEEcDYvXC6KQ1lOB5XcCbEq3u0MNzESYt/mV7BOwvNKpToWX9RVVNQBpbdyu+PnFCwZXb4TEJT73+JbaMnISvvAuOonaUDqxBQuPVMHUNofJnj2D6z3dAo0uHMTYXxpgcAWy259FiJnhXI/RmKoregexpVYilEec1YHL4EZ9VTXk3vbWW0LFueRE7G7IHyh7qlcof6kPooTn4t3OqFMCgJOx0VUEBzf4HZI8N36Mgy+23B77E5ds/R+XgMUxbfVxYz5xhmOmpqnFUwF55IRJblyGv6XxYs2lrtPto9NNgoDtgjA/Q22cGdFonspsug6t0Lt25NOgctIa0Dui1cTBykbEZVHQGCio7qLBceRv1rWk+UPZgr8TwXMjC2zplWAX6g2qGJquqJoij625RsHnEv8Zl22TwitXHUEmqYJ9Udu1BWEvOhtFRKC7MC1qjT4aeRtec3kRQ6QSaApPVg5zyHtqhSgiS3pnS6mkqFSBQNxcxdoK2ZtId8lKx9Hqts0GriaH5r3eL6VO6s0cqpQLKH+xDGYntxstqpQ+q/RKNtABm/6ASH+prl9Rpw/Czh05EgFnhVZPiOH3GjdDRTqKjhamjB5HemgWt0QVjAu00yVXQaGl7TQggc8YKWtzVFCcjv/0KpHsr4HAkwqi3gz56aE046Y6lQkt2UXcGHLE6hyYu7Oot29mLU1W7tQdvNgSlg1UMzkUEwPZgVbH02VNPCnhul97/GYGORYnACToUlQtc+SZtp/RA4t2IRlWfUERTJg9amuc2eo12lZ4NnZN2FEcI2vQWaJ30bUAvdTZa7HqtHfQJArOFdp8EWiPJQSSmuPHOrkIsnBk/oEmf7x8qfaAHsnqF5QJKHpgt3XJFfQR6tMqP0Wo/Ds1pV9CBPTTnGfT0kotQ5Z2/GzrajQz0FRabWk5PX1qMKSHYsmvgrh9AQvAcxNCzwUgPr5x5a2Gijxsj3TVLQj5txQXiC81K51npvCfuLMb4H3xY+9OUdZrca2tGSnb0ILhjthRdRHBHt8T5F2eUQcAr+vTOmxV8YNba4yhfOTYpAp0Sn6Kc3mGay2mwpYfF15g1rwMamuua3H7EN/4LYkIX0ev2lUia/SuY8rphzKyjB1kZrZVpVGgtrFnTse1XpRjfXyiN7/dh182ZT2qK7mgdLdkxG6dTcHu3dN6aVmm0skh6nzQ6rRhfvPqSgP/TkQmUERSL4VT/23UUnnmPweppQ4z/LBgK+qDLn0Ov1ldAU3E19L1bENe2CvrgxdCEfgqdpwt6Tzv0uV1IDLRj13qGzyf4fGlifwHee9wzqglsnyWVbCdgUlCoW/icZ59ze3rLRQHvUwHq4n3uv79CKQEJXa9YEoPKNjoXnR+Db9lbSGi5BdrMJuh9c6ChLzDtrPuga7sVlqol0BecBdc56+mT80LospqxaEEN3tntw/i+PGl8X76wE/vz8Mm/04dNcFs3AtsIluyZ1LqhE+9X+KT3woWSoKe26bkvUELgqlTYKbnT+KJYxfdd+WdkXvgMqte+hvKlv6ZRXwaNfwClDc3oOb9Pumt1Bd55Ih8MO77PK03sy8XEvjwRC5+sxr+tSwoQ5FTNQuB+Evn++7ukYtK6i6vxXtgXKeCevX+PwEUr+C3xqX1qjn9LbQw6CavKK2t/Lvdj/AUP3QGy5GuKNnaMFd8/U/IzMIl9tv6tXSLmfPHWmdK0TZ14o5ZW/+FD4kJPvnYSweuOInDdp8IyiLDR/ilWPTbAuaj8XpqOoo0fF1AMO/6CmwrxUOxRCiCfcsLKvshp8m5rGmVIVhGBRsDJquI869pltfj7Ky+Ka31EDzAGkiXDnV6n9n3z2LcOT4jflI79l4CaIDgGnFS2xLnJfLbEevfRjFFN5pLQ7uLhLhplGbZ4eOYUv2i4U2KJPB33yuObxcW4DQwfh58A/AQl2x+u9juOKb8GfP3eDQSXQ6BTRbAY/30WQbPIV+JnN7hGNKnziodkOBlWFKPELN+WDiqAbafEmjfUq1wO2P3qlyj+xacoJhAh8hlK5L5D6nG7Xz2p/Bow8VINAWbSaDMg20yGZlgRy1YR5dcujV+nia/JGGBIAbqlEyxRzBZVck6WHL94+A3lksCiLSdQRCCqGKroF/8TAY3um3rMp3TuceVXaPp8/JgKqiiDgNNJbDMxIXIck/+CrJ46S69GH2NwCLjNnSjc3C6K8AmfiiIbLc7xMa2PLMKJLz8XFz509Gu03UZ7O0EzuO/nsp30P43k+Bg113b7GA7ROuJ24uTnNPpVDCuD/i5N+Gwnoq1QutKfJrld9DbKLWt55Yhvc4cC2oHC+9oJnuL71JycF7GSW/OHTeLi3LiIhTSaDPcNKQVEawEdy+eo7djbNPcFFMOlSkK/T+NcVJxKRaRRgXL+1eGkyQ96R2v2skICU1Vw7wxpMm6fkhd998q5u17ZqSDI7YlXTqLl1qMoIMhCkmpVLdh8DE9EzXluu97YiqMjPD0iwFFyEXR0LGuCtKDDskjB12h0FoMjb6h5LJ/gWAJQgWRboIj72Ebn+E7wFIhub300gWfe/BIbnvkb7nr2b1TYF1NGnNuJk59hzf5NeGxPEUGl8CiTdSm+iyDZV5VCcQrGn0+WWNwXmT5qc3Z7B1Wogk0Eu6lNKtg0g3wS5fKUOO8eskqcr/Q3Pni+tOtP/6GgfXf740evo3Hn+VLjcAPBEpiq55MIkBSJk4UUeFIiF4CtP7NvU7AnG98F7x1NR1Ww/HtIbIXfNiVm6EjMfUrctPMCrNm3SQB+eOKvCi6Ez7kNLz2A8P198rl03sFnaFeJgCWRZUX5I+xP6RPKdp3h30QTZnkHaYTFBXLvaZUi4MKqkuPcu7lf3JGIz/m8u2VxTrVyf3SuRVrxcIhgnDQdGMzJoDLkSILis5xTLfWtGrAMKrinb1nXVh1QIVSp8Hl3tyqK7j81js6px7fCu7FFwLMf2tSEg/9Ji1GBEoAjDOmknGzHRxySyI0kUEwi++4jce8rmGduBqfF7bm9YSx3YytU8UWjLcPItllSwdjKahZ9qk6Ncze2YOhRH8ElECyDOaSvRuIpZjmUXLzE9qvn4kSO9clv48bcZ5o6pzb7tNQBz13NEku9qCzy7yLLothLdvIYuY/jSJ4s+9Hn1d1Xq0BNwsl+vAIcj/GItUvkC9tba/xhf+BzzvSu5oufTp4NTRHISH5D8zeOU+Wm4/kc1qNP0Ksyg6mAI3EELlsZ1kbQdi5KFvkrF5pXK1g/rDlmugcFGEmGkC1LBXOvJ38DF9UsFOlXYtWy5m2tEEDRmhhh2Km58ediJZF/zoZVi4zfvmi/q1kDSX3Zt9SNEWgExLO+GTnrGwm+UWJfzXnoGM6zOOZzouODT9OiJDgGm6pYkpXysfhqb4w0Tvpkj3VsYYfhh/9J9XTNkGBxZ66qGhWA6wh8nWIpFpDk56xrIMl9EUX6G6SrdwRkOAFqBUMKcDkn270xbPHyZssBt+tH+C8G8Z05gypYNkG51zUK0Owh9mWr+jlDch+r9u5qGn3aXRhUhlVkiUCP7zVLn/zGNLZyoeEfm+/ft/HdSDyvcBuDMmS0stbWiwKyhupFH/kiv+Vf6TOQAAmYoWU9a474n/zGeHTlQv2gI1brUC7z4zcuxFaZOpB2TfgAgwvgOxsiknMNmL6xmuEnxeDPmiQSnr3TOLL0LP2y/1fw0zUuhhe7o887lLw4OJJ+/bRRLiLzjjrp149l0Agbxt5+yDD6+A2G3Xcs1g8t6NAu+udAazT/Cxz3vG39N7hhAAAAAElFTkSuQmCC" InformativeScreenshot="480cec790cf5a02938b168df580f3756.png" Selector="&lt;html app='chrome.exe' title='Barcode Reader. Free Online Web Application'/&gt;" Url="https://online-barcode-reader.inliteresearch.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
